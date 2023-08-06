@@ -8,7 +8,7 @@ var strStr = function(haystack, needle) {
   let right = left + needle.length;
   let solution = haystack.slice(left, right);
 
-  for (let i = 0; i <= haystack.length; i++) {
+  for (let i = left; i <= haystack.length; i++) {
     solution = haystack.slice(left, right);
     if (solution === needle) return left;
     right++;
